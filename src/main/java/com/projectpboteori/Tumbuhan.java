@@ -30,7 +30,7 @@ public abstract class Tumbuhan {
     };
 
     public String cetakInfo() {
-        return "Nama: " + nama + "\nUmur: " + umur + " tahun" + "\nTinggi: " + tinggi + " meter";
+        return "Nama: " + nama + "\nUmur: " + umur + " tahun" ;
     }
 }
 

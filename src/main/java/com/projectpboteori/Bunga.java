@@ -4,9 +4,9 @@ public class Bunga extends Tumbuhan {
 
     //constructor
     public Bunga(String nama, int umur,int tinggi, int jumlahKelopak) {
-        super(nama, umur,tinggi);
+        super(nama, umur);
         this.jumlahKelopak = jumlahKelopak;
-        
+        this.tinggi = tinggi;
     }
     //overriding
     @Override
@@ -16,6 +16,6 @@ public class Bunga extends Tumbuhan {
 
     @Override
     public String cetakInfo() {
-        return super.cetakInfo() + "\nJumlah Kelopak: " + jumlahKelopak;
+        return super.cetakInfo() + "\nJumlah Kelopak: " + jumlahKelopak + "\nTinggi: " + tinggi + " meter";
     }
 }

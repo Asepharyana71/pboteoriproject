@@ -50,7 +50,7 @@ public class GUI {
                     tumbuhan = new Bunga(nama, umur,tinggi,jumlahKelopak);
                 } 
                 else{
-                    tumbuhan = new Pohon(nama, umur, tinggi);
+                    tumbuhan = new Pohon(nama, umur, tinggi,jumlahKelopak);
                 }
 
                 outputArea.setText(tumbuhan.cetakInfo() + "\n" + tumbuhan.tumbuh() + "\n\n");
