@@ -48,15 +48,12 @@ public class GUI {
                 Tumbuhan tumbuhan;
                 if (jumlahKelopak > 0) {
                     tumbuhan = new Bunga(nama, umur,tinggi,jumlahKelopak);
-                } else if(jumlahKelopak == 0){
+                } 
+                else{
                     tumbuhan = new Pohon(nama, umur, tinggi);
-                } else{
-                    tumbuhan = new Bunga(nama, umur, jumlahKelopak, tinggi);
                 }
 
-                outputArea.setText(tumbuhan.cetakInfo());
-                outputArea.setText(tumbuhan.tumbuh());
-                tumbuhan.tumbuh();
+                outputArea.setText(tumbuhan.cetakInfo() + "\n" + tumbuhan.tumbuh() + "\n\n");
             }
         });
 
