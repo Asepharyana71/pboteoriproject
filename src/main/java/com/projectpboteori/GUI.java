@@ -51,7 +51,7 @@ public class GUI {
                 } else if(jumlahKelopak == 0){
                     tumbuhan = new Pohon(nama, umur, tinggi);
                 } else{
-                    tumbuhan = new Bunga(nama, umur, 0, tinggi);
+                    tumbuhan = new Bunga(nama, umur, jumlahKelopak, tinggi);
                 }
 
                 outputArea.setText(tumbuhan.cetakInfo());
