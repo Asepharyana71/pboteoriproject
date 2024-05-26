@@ -48,8 +48,10 @@ public class GUI {
                 Tumbuhan tumbuhan;
                 if (jumlahKelopak > 0) {
                     tumbuhan = new Bunga(nama, umur,tinggi,jumlahKelopak);
-                } else {
+                } else if(jumlahKelopak == 0){
                     tumbuhan = new Pohon(nama, umur, tinggi);
+                } else{
+                    tumbuhan = new Bunga(nama, umur, 0, tinggi);
                 }
 
                 outputArea.setText(tumbuhan.cetakInfo());
